@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ExerciseDecorator
+namespace Decorator
 {
     public interface IExercise
     {

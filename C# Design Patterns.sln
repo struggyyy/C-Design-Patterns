@@ -3,21 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Builder\Builder.csproj", "{4281D023-4B3C-47BA-B03E-ED0179063265}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder", "Builder\Builder.csproj", "{4281D023-4B3C-47BA-B03E-ED0179063265}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype", "Prototype\Prototype.csproj", "{E01795FB-5FF5-4C42-841A-C7E2B53BAF92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prototype", "Prototype\Prototype.csproj", "{E01795FB-5FF5-4C42-841A-C7E2B53BAF92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Adapter\Adapter.csproj", "{1425AF3E-7547-48F4-BF66-674BFD576682}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adapter", "Adapter\Adapter.csproj", "{1425AF3E-7547-48F4-BF66-674BFD576682}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstract Factory", "Abstract Factory\Abstract Factory.csproj", "{80E66C61-7D9C-4ED9-BB3A-BDF109D469E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Abstract Factory", "Abstract Factory\Abstract Factory.csproj", "{80E66C61-7D9C-4ED9-BB3A-BDF109D469E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Decorator\Decorator.csproj", "{F7DD1C37-6F62-4AB3-AB41-418E802EB5C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Decorator", "Decorator\Decorator.csproj", "{F7DD1C37-6F62-4AB3-AB41-418E802EB5C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Facade\Facade.csproj", "{6498AE41-3163-4897-8B3E-957815DC04D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facade", "Facade\Facade.csproj", "{6498AE41-3163-4897-8B3E-957815DC04D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge", "Bridge\Bridge.csproj", "{220F0615-26AA-45DB-9BDF-B5738327B2E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge", "Bridge\Bridge.csproj", "{220F0615-26AA-45DB-9BDF-B5738327B2E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Composite.csproj", "{AB286E79-29CA-41C0-9041-0967B64FE36E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Composite", "Composite\Composite.csproj", "{AB286E79-29CA-41C0-9041-0967B64FE36E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interpreter", "Interpreter\Interpreter.csproj", "{E6B9C57D-F9CC-44B3-8382-8EA78C932D74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento", "Memento\Memento.csproj", "{E2F2762F-1C93-4CA4-A8D8-F7EAF9BF9450}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,14 @@ Global
 		{AB286E79-29CA-41C0-9041-0967B64FE36E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB286E79-29CA-41C0-9041-0967B64FE36E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB286E79-29CA-41C0-9041-0967B64FE36E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6B9C57D-F9CC-44B3-8382-8EA78C932D74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6B9C57D-F9CC-44B3-8382-8EA78C932D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6B9C57D-F9CC-44B3-8382-8EA78C932D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6B9C57D-F9CC-44B3-8382-8EA78C932D74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2F2762F-1C93-4CA4-A8D8-F7EAF9BF9450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2F2762F-1C93-4CA4-A8D8-F7EAF9BF9450}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2F2762F-1C93-4CA4-A8D8-F7EAF9BF9450}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2F2762F-1C93-4CA4-A8D8-F7EAF9BF9450}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

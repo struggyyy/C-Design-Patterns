@@ -5,7 +5,7 @@ using System.Text;
 using System.Xml;
 using System.Threading.Tasks;
 
-namespace WzorzecAdapter
+namespace Adapter
 {
 
     public class UsersApi
