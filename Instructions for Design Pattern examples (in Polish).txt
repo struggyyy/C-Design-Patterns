@@ -1,0 +1,204 @@
+/////////////////////////////////////////////////////////////////////
+Builder:
+Aplikacja powinna potrafić składać 3 gotowe zestawy komputerowe:
+
+biurowy,
+dla graczy (gamingowy - straszne słowo),
+dla profesjonalistów.
+Cennik:
+
+płyty:
+
+Asus Prime A320M-E - 259,90 zł
+Gigabyte X570 Aorus Elite - 895,60 zł
+Supermicro MBD X11DPH - 2755,30 zł
+procesory:
+
+AMD Ryzen 5 2600 - 589,00 zł
+Intel i7 9700K - 1829,00 zł
+Intel Xeon Gold 5120 - 7999,00 zł
+dyski:
+
+Goodram CX400 250 GB SATA3 - 149,99 zł
+Samsung 970 EVO Plus 2TB M.2 - 2028,45 zł
+Seagate Skyhawk 14TB 3.5" - 2101,75 zł
+monitory:
+
+BenQ GW2270H - 369,00 zł
+HP Z4W65A4 - 4927,75 zł
+Eizo CG319X - 20749,00 zł
+Na końcu proszę utworzyć po jednej instancji każdego typu i je wyświetlić: (zamiast ?? ma się wyświetlić prawidłowa cena)
+
+Typ: biurowy
+Płyta główna: Asus Prime A320M-E
+Procesor: AMD Ryzen 5 2600
+Dysk: Goodram CX400 250 GB SATA3
+Monitor: BenQ GW2270H (1920x1080)
+Cena: ?? zł
+
+Typ: gamingowy
+Płyta główna: Gigabyte X570 Aorus Elite
+Procesor: Intel i7 9700K
+Dysk: Samsung 970 EVO Plus 2TB M.2
+Monitor: HP Z4W65A4 (3840x1600)
+Cena: ?? zł
+
+Typ: dla profesjonalistów
+Płyta główna: Supermicro MBD X11DPH
+Procesor: Intel Xeon Gold 5120
+Dysk: Seagate Skyhawk 14TB 3.5"
+Monitor: Eizo CG319X (4096x2160)
+Cena: ?? zł
+
+/////////////////////////////////////////////////////////////////////
+Prototype:
+Tym razem oprogramowujemy sklep internetowy z żywnością.
+
+Towar wkładany przez klienta do koszyka jest wirtualny. W rzeczywistości pracownik włoży go podczas kompletowania zamówienia.
+
+Możemy porównać to do kuponów/bloczków/tokenów/znaczników które klient posiada w koszyku, a te później wymieniane są na rzeczywisty towar. My jako sklep możemy wyprodukować dowolną liczbę kuponów. Prościej mówiąc, będziemy je klonować.
+
+Produkty które sprzedajemy to chleb i masło.
+
+Bread - 9.50 zł
+
+Butter - 5.30 zł
+
+/////////////////////////////////////////////////////////////////////
+Adapter:
+Zewnętrzne API, odpowiedzialne za zarządzanie użytkownikami naszej aplikacji udostępnia nam bibliotekę do komunikacji z nimi. Biblioteka zawiera jedną metodę, zwracającą listę użytkowników w formacie XML (imię, nazwisko).
+
+Część systemu tworzona przez nas, na potrzeby jednego z modułów wymaga listy nazw użytkowników (listy zagnieżdzonych list imię + nawisko).
+
+W innym module aplikacji potrzebne jest wczytywanie użytkowników z dokumentu CSV, dostarczonego przez dział księgowy.
+
+Proszę napisać adapter który dokona konwersji listy użytkowników z formatu CSV na interfejs znany naszej aplikacji, a następnie wyświetlić w terminalu wszystkich klientów wraz z ich numerowaniem (każdy adapter startuje od 1). Uwaga, użytkowników może być więcej niż 9 (max 99), więc liczby porzadkowe powinny wyświetlać się zawsze na dwóch pozycjach (patrz przykład).
+
+Wynik działania aplikacji:
+
+Użytkownicy z API:
+ 1. John Doe
+ 2. John Wayne
+ 3. John Rambo
+
+Użytkownicy z CSV:
+ 1. Adam Nowak
+ 2. Katarzyna Kowalska
+ 3. Wojciech Jankowski
+ 4. Jakub Dąbrowski
+ 5. Antoni Woźniak
+ 6. Piotr Jankowski
+ 7. Mikołaj Zieliński
+ 8. Anna Szymańska
+ 9. Aleksandra Wiśniewska
+10. Mateusz Lewandowski
+11. Zofia Kwiatkowska
+
+/////////////////////////////////////////////////////////////////////
+Abstract Factory:
+Proszę napisać aplikację, która tworzyć będzie obiekty zawierające alfabet (fragment) i cyfry (również fragment) w danym systemie.
+
+Obsługa 3 systemów: łaciny, cyrylicy i greki.
+
+W wyniku działania powinniśmy uzyskać:
+
+abcde I II III
+абвгд 1 2 3
+αβγδε αʹ βʹ γʹ
+
+/////////////////////////////////////////////////////////////////////
+Decorator:
+W poniższym zadaniu próbujemy rozszerzyć działanie obiektów typu IExercise przy użyciu wzorca dekorator.
+
+Proszę stworzyć kolejny typ dekoratora 'GolfEquipment', dodający do listy wymaganych przedmiotów piłeczki oraz kije (dwa osobne wpisy do listy).
+
+Aby przetestować działanie stwórz trzy obiekty (przykładowo: swimming, runningAndSwimming, swimmingAndGolf) i wypisz rezultat w konsoli.
+
+Rezultat powinien przyjąć postać:
+
+I'm about to swim
+I need to pack:
+flip flops
+Starting exercise
+
+I'm about to run
+I'm about to swim
+I need to pack:
+flip flops
+shoes
+Starting exercise
+
+I'm about to swim
+I'm about to play golf
+I need to pack:
+golf club
+balls
+flip flops
+Starting exercise
+
+/////////////////////////////////////////////////////////////////////
+Facade:
+Widzimy kod symulujący proces zakładania nowego konta w portalu społecznościowym 'Start Line'.
+
+Proces zakładania konta wygląda następująco:
+
+1.walidacja adresu email
+2.sprawdzenie czy email jest wolny (email jest unikalnym identyfikatorem użytkownika)
+3.dodanie użytkownika do bazy danych (lista na potrzeby zadania)
+wysłanie maila do użytkownika, z potwierdzeniem założenia konta
+
+Zaczniemy od implementacji brakujących fragmentów kodu (TODO, NotImplementedException), następnie stworzymy metodę umożliwiającą usunięcie użytkownika.
+
+Na usunięcie użytkownika powinno składać się:
+sprawdzenie czy użytkownik istnieje (jeśli nie, to przerywamy proces wyrzuceniem wyjątku)
+usunięcie użytkownika z bazy danych (lista na potrzeby zadania)
+wysłanie maila do użytkownika potwierdzającego usunięcie konta
+
+Wynik:
+
+Aktualna liczba adresów: 2
+Welcome to our service someemail@gmail.com
+Aktualna liczba adresów: 3
+Goodbye john.doe@gmail.com
+Aktualna liczba adresów: 2
+
+/////////////////////////////////////////////////////////////////////
+Bridge:
+Rozszerz poniższy kod, umożliwiając tworzenie telewizorów i pilotów różnego rodzaju. Proszę nie kasować klas bez instancji!
+
+Pilot Harmony - włącz telewizor...
+Telewizor LG - włączam się.
+
+Sprawdź kanał - bieżący kanał: 1
+
+Pilot LG - zmienia kanał...
+Telewizor LG - zmieniam kanał: 100
+
+Sprawdź kanał - bieżący kanał: 100
+
+Pilot Harmony - wyłącz telewizor...
+Telewizor LG - wyłączam się.
+
+/////////////////////////////////////////////////////////////////////
+Composite:
+Proszę napisać program budujący strukturę drzewiastą.
+
+Podstawowa to korzeń (specjalny przypadek węzła). Elementy które mogą się pojawić to węzły i liście.
+
+Korzeń i węzły mogą zawierać inne elementy, liście nie (kończą daną gałąź).
+
+Korzeń rozpoczęcie renderowania
+Liść 1.1 renderowanie...
+Węzeł 2 rozpoczęcie renderowania
+Liść 2.1 renderowanie...
+Liść 2.2 renderowanie...
+Liść 2.3 renderowanie...
+Węzeł 2 zakończenie renderowania
+Węzeł 3 rozpoczęcie renderowania
+Liść 3.1 renderowanie...
+Liść 3.2 renderowanie...
+Węzeł 3.3 rozpoczęcie renderowania
+Liść 3.3.1 renderowanie...
+Węzeł 3.3 zakończenie renderowania
+Węzeł 3 zakończenie renderowania
+Korzeń zakończenie renderowania
