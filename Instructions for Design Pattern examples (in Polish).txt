@@ -202,3 +202,35 @@ Liść 3.3.1 renderowanie...
 Węzeł 3.3 zakończenie renderowania
 Węzeł 3 zakończenie renderowania
 Korzeń zakończenie renderowania
+
+/////////////////////////////////////////////////////////////////////
+Interpreter:
+Proszę napisać program konwertujący liczbę z zapisu rzymskiego na zapis arabski.
+
+Obsługiwany zakres od 1 do 3999. Dlaczego?
+
+MDXLIII = 1543
+CMXVII = 917
+
+/////////////////////////////////////////////////////////////////////
+Memento:
+Powrót do przyszłości (Back to the Future)
+
+Początkowy rok: 1985
+Nie można cofnąć - brak zapisanych danych
+
+Część I:
+Rok zmieniony na: 1955
+Zapisano pamiątkę z roku: 1955
+Rok zmieniony na: 1985
+
+Część II:
+Rok zmieniony na: 2015
+Rok zmieniony na: 1985
+Przywrócony rok: 1955
+Rok zmieniony na: 1985
+Zapisano pamiątkę z roku: 1985
+
+Część III:
+Rok zmieniony na: 1885
+Przywrócony rok: 1985
