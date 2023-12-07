@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Odwiedzajacy
+namespace Visitor
 {
     public interface ICity
     {
