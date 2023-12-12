@@ -234,3 +234,86 @@ Zapisano pamiątkę z roku: 1985
 Część III:
 Rok zmieniony na: 1885
 Przywrócony rok: 1985
+
+/////////////////////////////////////////////////////////////////////
+Observer:
+
+Output:
+DailyEconomy publikuje artykuł "USA is going bancrupt!"
+NewYorkTimes publikuje artykuł "USA is going bancrupt!"
+NewYorkTimes publikuje artykuł "Life on Alpha Centauri"
+NationalGeographic publikuje artykuł "Life on Alpha Centauri"
+NewYorkTimes publikuje artykuł "Adam Małysz is the greatest sportsman in the history of mankind"
+DailyEconomy publikuje artykuł "CD Project RED value has grown by 500% in 2020"
+NewYorkTimes publikuje artykuł "CD Project RED value has grown by 500% in 2020"
+NewYorkTimes publikuje artykuł "Kirkendall effect causing airplanes' engine deteriorate"
+NationalGeographic publikuje artykuł "Kirkendall effect causing airplanes' engine deteriorate"
+NewYorkTimes publikuje artykuł "Texas is going bancrupt!"
+
+/////////////////////////////////////////////////////////////////////
+Visitor:
+
+Output:
+Odwiedzam Kraków
+Odwiedzam Szczecin
+Odwiedzam Rzeszów
+Odwiedzam Gdańsk
+Odwiedzam Katowice
+Odwiedzam Maastricht
+Odwiedzam Amsterdam
+Odwiedzam Nowy Jork
+Odwiedzam Waszyngton
+Odwiedzam Boston
+Odwiedzam Princeton
+Odwiedzam Seattle
+Odwiedzam Chicago
+Odwiedzam Huston
+Byłem w 5 Polskich miastach, 2 Holenderskich miastach i 7 miastach USA.
+
+/////////////////////////////////////////////////////////////////////
+Chain of command:
+
+Proszę stworzyć łańcuch zwierząt:
+Małpa > Pies > Wiewiórka > Kot
+
+Zwierzęta jedzią:
+
+Małpa - banany
+Pies - szynkę (leniuch lubi w plasterkach) lub mięso
+Wiewiórka - orzechy
+Kot - mięso
+Aplikacja powina odpalić się na pełnej liście zwierząt i na podliście zaczynająć od wiewiórki.
+
+Output:
+Łańcuch: Małpa > Pies > Wiewiórka > Kot
+Kto chce orzech?
+Wiewiórka zjada orzech.
+Kto chce banan?
+Małpa zjada banan.
+Kto chce mięso?
+Pies zjada mięso.
+Kto chce plasterek szynki?
+Pies zjada plasterek szynki.
+Kto chce lody?
+Nikt nie chce tego zjeść: lody
+
+Podzbiór łańcucha: Wiewiórka > Kot
+Kto chce orzech?
+Wiewiórka zjada orzech.
+Kto chce banan?
+Nikt nie chce tego zjeść: banan
+Kto chce mięso?
+Kot zjada mięso.
+Kto chce plasterek szynki?
+Nikt nie chce tego zjeść: plasterek szynki
+Kto chce lody?
+Nikt nie chce tego zjeść: lody
+
+/////////////////////////////////////////////////////////////////////
+Mediator:
+
+Output:
+Programista Nakamoto otrzymał wiadomość: Proszę natychmiast wprowadzić poprawki na produkcję.
+Programista Geohot otrzymał wiadomość: Proszę natychmiast wprowadzić poprawki na produkcję.
+Użytkownik Ania otrzymał wiadomość: Czekam, aż Nakamoto zaparzy poranną kawę...
+Programista Nakamoto otrzymał wiadomość: Czekam, aż Nakamoto zaparzy poranną kawę...
