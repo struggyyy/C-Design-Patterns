@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mediator", "Mediator\Mediat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Proxy\Proxy.csproj", "{0B47015F-4B06-4978-ABF7-920D8AA170CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flyweight", "Flyweight\Flyweight.csproj", "{8BF95E0B-E312-483B-A8EE-F788A5C7AF99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{0B47015F-4B06-4978-ABF7-920D8AA170CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B47015F-4B06-4978-ABF7-920D8AA170CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B47015F-4B06-4978-ABF7-920D8AA170CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BF95E0B-E312-483B-A8EE-F788A5C7AF99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BF95E0B-E312-483B-A8EE-F788A5C7AF99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BF95E0B-E312-483B-A8EE-F788A5C7AF99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF95E0B-E312-483B-A8EE-F788A5C7AF99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
