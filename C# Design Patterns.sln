@@ -31,11 +31,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chain of command", "Chain o
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mediator", "Mediator\Mediator.csproj", "{0736AF00-6FB7-4249-ABFB-A6C2EBD0162D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Proxy\Proxy.csproj", "{0B47015F-4B06-4978-ABF7-920D8AA170CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Proxy", "Proxy\Proxy.csproj", "{0B47015F-4B06-4978-ABF7-920D8AA170CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flyweight", "Flyweight\Flyweight.csproj", "{8BF95E0B-E312-483B-A8EE-F788A5C7AF99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flyweight", "Flyweight\Flyweight.csproj", "{8BF95E0B-E312-483B-A8EE-F788A5C7AF99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Command", "Command\Command.csproj", "{B7A56E0F-F1AA-4FFE-B3DB-C64D54C2C545}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Command", "Command\Command.csproj", "{B7A56E0F-F1AA-4FFE-B3DB-C64D54C2C545}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template Method", "Template Method\Template Method.csproj", "{C33A66BB-5B2B-404D-AC99-33F139CD99FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{B7A56E0F-F1AA-4FFE-B3DB-C64D54C2C545}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7A56E0F-F1AA-4FFE-B3DB-C64D54C2C545}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7A56E0F-F1AA-4FFE-B3DB-C64D54C2C545}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C33A66BB-5B2B-404D-AC99-33F139CD99FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C33A66BB-5B2B-404D-AC99-33F139CD99FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C33A66BB-5B2B-404D-AC99-33F139CD99FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C33A66BB-5B2B-404D-AC99-33F139CD99FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

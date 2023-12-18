@@ -12,6 +12,11 @@ namespace Pelnomocnik
             HasAdminPrivilages = hasAdminPrivilages;
         }
 
+        public User(User other)
+        {
+            HasAdminPrivilages = other.HasAdminPrivilages;
+        }
+
         public void MakeAdmin()
         {
             HasAdminPrivilages = true;
@@ -55,18 +60,22 @@ namespace Pelnomocnik
 
         public void DisplayRestrictedData()
         {
-            Console.WriteLine("Nie masz wystarczających uprawnień");
+            Console.WriteLine("---------------------------------------------------------");
+            foreach (var entry in Map)
+            {
+                Console.WriteLine($"{entry.Key} zarabia {entry.Value} zł miesięcznie");
+            }
         }
     }
 
     public class DatabaseGuard : Information
     {
-        private Database DB;
-        private User user;
+        private readonly Database DB;
+        private readonly User user;
 
-        public DatabaseGuard(User u)
+        public DatabaseGuard(User u, Database db)
         {
-            DB = new Database();
+            DB = db;
             user = u;
         }
 
@@ -79,16 +88,12 @@ namespace Pelnomocnik
         {
             if (user.IsAdmin())
             {
-                Console.WriteLine("---------------------------------------------------------");
-                foreach (var entry in DB.Map)
-                {
-                    Console.WriteLine($"{entry.Key} zarabia {entry.Value} zł miesięcznie");
-                }
+                DB.DisplayRestrictedData();
             }
             else
             {
                 Console.WriteLine("---------------------------------------------------------");
-                DB.DisplayRestrictedData();
+                Console.WriteLine("Nie masz wystarczających uprawnień");
             }
         }
     }
@@ -98,14 +103,15 @@ namespace Pelnomocnik
         static void Main(string[] args)
         {
             var Zbyszek = new User(false);
-            var db = new DatabaseGuard(Zbyszek);
+            var db = new Database();
+            var dbGuard = new DatabaseGuard(Zbyszek, db);
 
-            db.DisplayData();
+            dbGuard.DisplayData();
 
-            db.DisplayRestrictedData();
+            dbGuard.DisplayRestrictedData();
 
             Zbyszek.MakeAdmin();
-            db.DisplayRestrictedData();
+            dbGuard.DisplayRestrictedData();
         }
     }
 }
