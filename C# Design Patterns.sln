@@ -39,6 +39,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Command", "Command\Command.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template Method", "Template Method\Template Method.csproj", "{C33A66BB-5B2B-404D-AC99-33F139CD99FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{34E67B74-9489-467C-90E7-3635FCF0881A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{C33A66BB-5B2B-404D-AC99-33F139CD99FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C33A66BB-5B2B-404D-AC99-33F139CD99FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C33A66BB-5B2B-404D-AC99-33F139CD99FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34E67B74-9489-467C-90E7-3635FCF0881A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34E67B74-9489-467C-90E7-3635FCF0881A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34E67B74-9489-467C-90E7-3635FCF0881A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34E67B74-9489-467C-90E7-3635FCF0881A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
