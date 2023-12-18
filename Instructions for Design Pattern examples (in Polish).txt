@@ -317,3 +317,62 @@ Programista Nakamoto otrzymał wiadomość: Proszę natychmiast wprowadzić popr
 Programista Geohot otrzymał wiadomość: Proszę natychmiast wprowadzić poprawki na produkcję.
 Użytkownik Ania otrzymał wiadomość: Czekam, aż Nakamoto zaparzy poranną kawę...
 Programista Nakamoto otrzymał wiadomość: Czekam, aż Nakamoto zaparzy poranną kawę...
+
+/////////////////////////////////////////////////////////////////////
+Proxy:
+
+Tym razem wzorzec pełnomocnik. Dostęp do listy użytkowników jest dla wszystkich za pomocą metody DisplayData(). Dostęp do danych wrażliwych (zarobki) jest jedynie dla użytkowników, którzy mają uprawnienia adminisatratora - DisplayRestrictedData().
+
+Output:
+
+Użytkownicy:
+Zyzio MacKwacz
+Scooby Doo
+Adam Mackiewicz
+Rick Morty
+---------------------------------------------------------
+Nie masz wystarczających uprawnień
+---------------------------------------------------------
+Zyzio MacKwacz zarabia 2500 zł miesięcznie
+Scooby Doo zarabia 11.4 zł miesięcznie
+Adam Mackiewicz zarabia 15607.95 zł miesięcznie
+Rick Morty zarabia 429.18 zł miesięcznie
+
+/////////////////////////////////////////////////////////////////////
+Flyweight:
+
+Output:
+Tworzę nowy obiekt typu Tree
+Normalne drzewo (plik "tree.png") znajduje się na pozycji 0,0
+
+Tworzę nowy obiekt typu LargeTree
+Duże drzewo (plik "large_tree.png") znajduje się na pozycji 0,7
+
+Wykorzystuję istniejący obiekt
+Normalne drzewo (plik "tree.png") znajduje się na pozycji 3,16
+
+Tworzę nowy obiekt typu Bush
+Krzak (plik "bush.png") znajduje się na pozycji 10,9
+
+Wykorzystuję istniejący obiekt
+Normalne drzewo (plik "tree.png") znajduje się na pozycji 7,7
+
+Wykorzystuję istniejący obiekt
+Duże drzewo (plik "large_tree.png") znajduje się na pozycji 20,0
+
+Wykorzystuję istniejący obiekt
+Normalne drzewo (plik "tree.png") znajduje się na pozycji 3,28
+
+Wykorzystuję istniejący obiekt
+Krzak (plik "bush.png") znajduje się na pozycji 1,5
+
+Wykorzystuję istniejący obiekt
+Normalne drzewo (plik "tree.png") znajduje się na pozycji 8,8
+
+/////////////////////////////////////////////////////////////////////
+Command:
+
+Output:
+Lampa wyłączona
+Lampa włączona
+Lampa wyłączona
