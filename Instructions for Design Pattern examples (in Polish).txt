@@ -376,3 +376,50 @@ Output:
 Lampa wyłączona
 Lampa włączona
 Lampa wyłączona
+
+/////////////////////////////////////////////////////////////////////Template Method:
+
+Proszę napisać aplikację która będzie obsługiwać 2 typy klientów - zamawiających online lub tradycyjnie (stacjonarnie).
+
+Aplikacja powinna umożliwiać dodanie gratisu do dostawy.
+
+Output:
+Kompletowanie zamówienia...
+Ustawiono parametry wysyłki...
+Płatność...
+Dodano gratis...
+Wysyłka...
+
+Wybranie produktów...
+Płatność w kasie (karta/gotówka)...
+Wydanie produktów (odbiór osobisty)...
+
+/////////////////////////////////////////////////////////////////////
+Strategy:
+
+Output:
+-- Mortal Kombat --
+
+Jestem Sub-Zero!
+Uderzenie
+Kopniecie lodowe
+Krotki skok
+Dlugi skok
+    
+Jestem Scorpion!
+Uderzenie
+Kopniecie z ogniem
+Kopniecie lodowe
+Dlugi skok
+
+/////////////////////////////////////////////////////////////////////
+State:
+
+Proszę napisać aplikację, która wyświetlać będzie stan dzwonka/wibracji/wyciszenia telefonu. Metoda alert() w każdym ze stanów powinna wypisać w jakim stanie się znajduje telefon (w rzeczywistości byłaby to ikonka na górnej belce).
+
+Output:
+wibracja...
+dzwonek...
+wyciszenie...
+wyciszenie...
+wibracja...
